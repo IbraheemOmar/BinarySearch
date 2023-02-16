@@ -20,15 +20,20 @@
             hi = mid;
         }
     }
+    if (arr[lo] == myTarget)
+    {
+        return lo;
+    }
+    
     return -1;
 
 
 }
 
 // editable
-int myTarget = 4;
+int myTarget = 1;
 
-int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+int[] arr = { 1 };
 
 
 //
@@ -41,5 +46,5 @@ if (result == -1)
 }
 else
 {
-    Console.WriteLine(result);
+    Console.WriteLine($"the target exists at the index of {result}");
 }
